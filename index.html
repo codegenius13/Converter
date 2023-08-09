@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Converter App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header> 
+        <h1>Value Converter for Chemistry</h1>
+        <nav>
+            <ul>
+                <li><a href="#press">Pressure</a></li>
+                <li><a href="#vol">Volume</a></li>
+                <li><a href="#temp">Temperature</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Pressure Converter -->
+    <div class="pressure" id="press">
+        <h1>Pressure Converter</h1>
+        <ul>
+            <li>1mmHg = 1torr</li>
+            <li>1Pa = 1N/m2</li>
+        </ul>
+        <p>Note: The value gotten for Torr will be equal to mmHg; also the value for Pa will be equal to N/m2</p>
+    </div>
+        <h1 class="convert-type">Press the given keys</h1>
+        <div class="container top">
+            <p id="comments">Type the value you want and click the button to convert</p>
+             <form action="" id="convert" method="post">
+                <input type="text" name="pressure" id="pressure" placeholder="Input Pressure Value">
+                <input type="submit" name="convertpress" value="Convert Pressure" id="submit">
+             </form>
+        </div>
+        <div class="container bottom" id="answer">
+            <h2 class="invisible">Answer goes here</h2>
+        </div>
+        <ul id="direction">
+            <li>Press "T" key to switch to torr conversion</li>
+            <li>Press "M" key to switch to mmHg conversion</li> 
+            <li>Press "P" key to switch to pascal convertion.</li>
+            <li>Press "N" key to switch to N/m2 convertion.</li>
+        </ul>
+
+        <!-- Volume Converter -->
+        <div class="other" id="vol">
+            <h1>Volume Converter</h1>
+            <ul>
+                <li>1dm3 = 1L</li>
+                <li>1cm3 = 1mL</li>
+            </ul>
+            <p>Note: The value gotten for dm3 will be equal to L; also the value for cm3 will be equal be mL</p>
+        </div>
+            <h1 class="convert-type-two">Press the given keys</h1>
+            <div class="container top">
+                <p id="comments-two">Type the value you want and click the button to convert</p>
+                 <form action="" id="convert-two" method="post">
+                    <input type="text" name="pressure" id="pressure-two" placeholder="Input Volume Value">
+                    <input type="submit" name="convertpress" value="Convert Volume" id="submit">
+                 </form>
+            </div>
+            <div class="container bottom" id="answer-two">
+                <h2 class="invisible">Answer goes here</h2>
+            </div>
+            <ul id="direction">
+                <li>Press "C" key to switch to dm3 conversion</li>
+                <li>Press "L" key to switch to litre conversion</li>
+            </ul>
+
+            <!-- Temperature Converter -->
+            <div class="other" id="temp">
+                <h1>Temperature Converter</h1>
+            </div>
+                <h1 class="convert-type-three">Press the given keys</h1>
+                <div class="container top">
+                    <p id="comments-three">Type the value you want and click the button to convert</p>
+                    <form action="" id="convert-three" method="post">
+                        <input type="text" name="pressure" id="pressure-three" placeholder="Input Temp Value">
+                        <input type="submit" name="convertpress" value="Convert Temp" id="submit">
+                    </form>
+                </div>
+                <div class="container bottom" id="answer-three">
+                    <h2 class="invisible">Answer goes here</h2>
+                </div>
+                <ul id="direction">
+                    <li>Press "K" key to switch to kelvin conversion</li>
+                    <li>Press "D" key to switch to celcius conversion</li>
+                </ul>
+    <script src="script.js"></script>
+</body>
+</html>
