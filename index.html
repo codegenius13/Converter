@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Value Converter App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,6 +15,7 @@
                 <li><a href="#press">Pressure</a></li>
                 <li><a href="#vol">Volume</a></li>
                 <li><a href="#temp">Temperature</a></li>
+                <li><a href="#mass">Mass</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +28,19 @@
         </ul>
         <p>Note: The value gotten for Torr will be equal to mmHg; also the value for Pa will be equal to N/m2</p>
     </div>
-        <h1 class="convert-type">Press the given keys</h1>
+        <h1 class="convert-type">Press the button categories</h1>
+        <div class="categories">
+            <button class="torr">Torr</button>
+            <button class="mmHg">mmHg</button>
+            <button class="pascal">Pascal</button>
+            <button class="Nm">N/m2</button>
+        </div>
+        <ul id="direction">
+            <li>Press button "Torr" key to switch to torr conversion</li>
+            <li>Press button "mmHg" key to switch to mmHg conversion</li> 
+            <li>Press button "Pascal" key to switch to pascal convertion.</li>
+            <li>Press button "N/m2" key to switch to N/m2 convertion.</li>
+        </ul>
         <div class="container top">
             <p id="comments">Type the value you want and click the button to convert</p>
              <form action="" id="convert" method="post">
@@ -37,12 +51,7 @@
         <div class="container bottom" id="answer">
             <h2 class="invisible">Answer goes here</h2>
         </div>
-        <ul id="direction">
-            <li>Press "T" key to switch to torr conversion</li>
-            <li>Press "M" key to switch to mmHg conversion</li> 
-            <li>Press "P" key to switch to pascal convertion.</li>
-            <li>Press "N" key to switch to N/m2 convertion.</li>
-        </ul>
+        
 
         <!-- Volume Converter -->
         <div class="other" id="vol">
@@ -53,7 +62,15 @@
             </ul>
             <p>Note: The value gotten for dm3 will be equal to L; also the value for cm3 will be equal be mL</p>
         </div>
-            <h1 class="convert-type-two">Press the given keys</h1>
+            <h1 class="convert-type-two">Press the button categories</h1>
+            <div class="categories">
+                <button class="dm3">dm3</button>
+                <button class="litre">Litre</button>
+            </div>
+            <ul id="direction">
+                <li>Press button "dm3" key to switch to dm3 conversion</li>
+                <li>Press button "Litre" key to switch to litre conversion</li>
+            </ul>
             <div class="container top">
                 <p id="comments-two">Type the value you want and click the button to convert</p>
                  <form action="" id="convert-two" method="post">
@@ -64,16 +81,20 @@
             <div class="container bottom" id="answer-two">
                 <h2 class="invisible">Answer goes here</h2>
             </div>
-            <ul id="direction">
-                <li>Press "C" key to switch to dm3 conversion</li>
-                <li>Press "L" key to switch to litre conversion</li>
-            </ul>
 
             <!-- Temperature Converter -->
             <div class="other" id="temp">
                 <h1>Temperature Converter</h1>
             </div>
-                <h1 class="convert-type-three">Press the given keys</h1>
+                <h1 class="convert-type-three">Press the button categories</h1>
+                <div class="categories">
+                    <button  class="celcius">Celcius</button>
+                    <button class="kelvin">Kelvin</button>
+                </div>
+                <ul id="direction">
+                    <li>Press button "Kelvin" key to switch to kelvin conversion</li>
+                    <li>Press button "Celcius" key to switch to celcius conversion</li>
+                </ul>
                 <div class="container top">
                     <p id="comments-three">Type the value you want and click the button to convert</p>
                     <form action="" id="convert-three" method="post">
@@ -84,10 +105,40 @@
                 <div class="container bottom" id="answer-three">
                     <h2 class="invisible">Answer goes here</h2>
                 </div>
-                <ul id="direction">
-                    <li>Press "K" key to switch to kelvin conversion</li>
-                    <li>Press "D" key to switch to celcius conversion</li>
-                </ul>
+
+                <!-- Mass Converter -->
+                <div class="other" id="mass">
+                    <h1>Mass Converter</h1>
+                </div>
+                    <h1 class="convert-type-four">Press the button categories</h1>
+                    <div class="categories">
+                        <button  class="gram">Gram</button>
+                        <button class="kilo">Kilogram</button>
+                    </div>
+                    <ul id="direction">
+                        <li>Press button "Gram" key to switch to Gram conversion</li>
+                        <li>Press button "Kilogram" key to switch to Kilogram conversion</li>
+                    </ul>
+                    <div class="container top">
+                        <p id="comments-four">Type the value you want and click the button to convert</p>
+                        <form action="" id="convert-four" method="post">
+                            <input type="text" name="pressure" id="pressure-four" placeholder="Input Mass Value">
+                            <input type="submit" name="convertpress" value="Convert Mass" id="submit">
+                        </form>
+                    </div>
+                    <div class="container bottom" id="answer-four">
+                        <h2 class="invisible">Answer goes here</h2>
+                    </div>
+
+                    <footer>
+                        <h4>Designed by Guru</h4>
+                        <div class="socials">
+                            <div><a href="https://mobile.facebook.com/nt/screen/?params=%7B%7D&path=%2Fpages%2Fnt_launchpoint_redesign%2Fhomescreen%2Fmtouch%2F&paipv=0&eav=AfbVE1hVJNY5Tk_YUlPEvc_-2zitowF7ruczAz7EfNi-jGlO3RNTbsWftZ3Nxs6rq3E" target="_blank"><i class="fa fa-facebook"></i></a></div>
+                            <div><a href="https://wa.me/0814-558-4399"><i class="fa fa-whatsapp"></i></a></div>
+                            <div><a href="https://www.linkedin.com/in/boluwatife-ikuerowo-80490226b/"><i class="fa fa-linkedin"></i></a></div>
+                            <div><a href="https://www.instagram.com/this_the_guru_13/"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </footer>
     <script src="script.js"></script>
 </body>
 </html>

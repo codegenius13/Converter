@@ -83,6 +83,30 @@ header nav ul li a:hover {
 p {
     margin-bottom: 1em;
 }
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.categories button {
+    margin-right: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 17px;
+}
+.categories button:hover {
+    background-color: black;
+    color: white;
+    transition: .4s;
+}
+.categories button:focus {
+    background-color: black;
+    color: white;
+    transition: .4s;
+}
 input {
     text-align: center;
     width: 150px;
@@ -96,6 +120,33 @@ input {
 }
 #direction li {
     margin-top: 10px;
+}
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+footer h4 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.socials div a {
+    margin-right: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 50%;
+}
+.socials div a:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    transition: .4s;
 }
 @media(max-width: 750px) {
     .container {
